@@ -9,7 +9,7 @@
 import Foundation
 import XMPPFramework
 
-public class TSM2 {
+public class TSMXMPP {
     
     private var stream: XMPPStream!
     
