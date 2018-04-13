@@ -1,7 +1,13 @@
+# Created by https://www.gitignore.io/api/xcode
+
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
 ## Build generated
 build/
-DerivedData
-build.xcarchive
+DerivedData/
 
 ## Various settings
 *.pbxuser
@@ -12,21 +18,19 @@ build.xcarchive
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+xcuserdata/
 
 ## Other
-*.xccheckout
 *.moved-aside
-*.xcuserstate
+*.xccheckout
 *.xcscmblueprint
 
-## Obj-C/Swift specific
-*.hmap
-*.ipa
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
 
-# CocoaPods
-Pods/
 
-# Carthage
-Carthage/Checkouts
-Carthage/Build
+# End of https://www.gitignore.io/api/xcode
