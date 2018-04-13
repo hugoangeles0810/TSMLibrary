@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A25532C20810A4C00FED190 /* Prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25532B20810A4C00FED190 /* Prueba.swift */; };
 		9ABBF97B2080EB0600A7CD91 /* TSMLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A25532B20810A4C00FED190 /* Prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba.swift; sourceTree = "<group>"; };
+		9A25532E20810B6600FED190 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9ABBF9762080EB0600A7CD91 /* TSMLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSMLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMLibrary.h; sourceTree = "<group>"; };
 		9ABBF97A2080EB0600A7CD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,11 +30,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A25532D20810B6500FED190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A25532E20810B6600FED190 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9ABBF96C2080EB0600A7CD91 = {
 			isa = PBXGroup;
 			children = (
 				9ABBF9782080EB0600A7CD91 /* TSMLibrary */,
 				9ABBF9772080EB0600A7CD91 /* Products */,
+				9A25532D20810B6500FED190 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +60,7 @@
 			children = (
 				9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */,
 				9ABBF97A2080EB0600A7CD91 /* Info.plist */,
+				9A25532B20810A4C00FED190 /* Prueba.swift */,
 			);
 			path = TSMLibrary;
 			sourceTree = "<group>";
@@ -95,6 +108,7 @@
 				TargetAttributes = {
 					9ABBF9752080EB0600A7CD91 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A25532C20810A4C00FED190 /* Prueba.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +268,7 @@
 		9ABBF97F2080EB0600A7CD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -260,12 +276,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TSMLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.hugoangeles0810.TSMLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +292,7 @@
 		9ABBF9802080EB0600A7CD91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -281,6 +300,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TSMLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

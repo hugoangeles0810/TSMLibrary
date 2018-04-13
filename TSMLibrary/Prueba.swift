@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+extension UILabel {
+    public func hi() {
+        print("Hi")
+    }
+}
