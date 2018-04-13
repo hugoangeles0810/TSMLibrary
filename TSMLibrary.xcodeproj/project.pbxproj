@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A25532C20810A4C00FED190 /* Prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25532B20810A4C00FED190 /* Prueba.swift */; };
+		810EEB832FF1B7DAF0EC5511 /* Pods_TSMLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A351AC05E362CA7A27B58C8 /* Pods_TSMLibrary.framework */; };
+		9A25534F208111EF00FED190 /* TSMXMPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25534E208111EF00FED190 /* TSMXMPP.swift */; };
 		9ABBF97B2080EB0600A7CD91 /* TSMLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A25532B20810A4C00FED190 /* Prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba.swift; sourceTree = "<group>"; };
+		7A351AC05E362CA7A27B58C8 /* Pods_TSMLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A25532E20810B6600FED190 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A25534E208111EF00FED190 /* TSMXMPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMXMPP.swift; sourceTree = "<group>"; };
 		9ABBF9762080EB0600A7CD91 /* TSMLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSMLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMLibrary.h; sourceTree = "<group>"; };
 		9ABBF97A2080EB0600A7CD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE83BD9BADF65CCA15A43392 /* Pods-TSMLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSMLibrary/Pods-TSMLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D05228B1FE9BD3ECC91F4B /* Pods-TSMLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSMLibrary/Pods-TSMLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810EEB832FF1B7DAF0EC5511 /* Pods_TSMLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				9A25532E20810B6600FED190 /* UIKit.framework */,
+				7A351AC05E362CA7A27B58C8 /* Pods_TSMLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -44,6 +50,7 @@
 				9ABBF9782080EB0600A7CD91 /* TSMLibrary */,
 				9ABBF9772080EB0600A7CD91 /* Products */,
 				9A25532D20810B6500FED190 /* Frameworks */,
+				C06F5B93074D7E56310069AB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +67,18 @@
 			children = (
 				9ABBF9792080EB0600A7CD91 /* TSMLibrary.h */,
 				9ABBF97A2080EB0600A7CD91 /* Info.plist */,
-				9A25532B20810A4C00FED190 /* Prueba.swift */,
+				9A25534E208111EF00FED190 /* TSMXMPP.swift */,
 			);
 			path = TSMLibrary;
+			sourceTree = "<group>";
+		};
+		C06F5B93074D7E56310069AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE83BD9BADF65CCA15A43392 /* Pods-TSMLibrary.debug.xcconfig */,
+				B9D05228B1FE9BD3ECC91F4B /* Pods-TSMLibrary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ABBF97E2080EB0600A7CD91 /* Build configuration list for PBXNativeTarget "TSMLibrary" */;
 			buildPhases = (
+				95B3A216B7E8700CB24AE515 /* [CP] Check Pods Manifest.lock */,
 				9ABBF9712080EB0600A7CD91 /* Sources */,
 				9ABBF9722080EB0600A7CD91 /* Frameworks */,
 				9ABBF9732080EB0600A7CD91 /* Headers */,
@@ -140,12 +157,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95B3A216B7E8700CB24AE515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSMLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9ABBF9712080EB0600A7CD91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A25532C20810A4C00FED190 /* Prueba.swift in Sources */,
+				9A25534F208111EF00FED190 /* TSMXMPP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +305,7 @@
 		};
 		9ABBF97F2080EB0600A7CD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE83BD9BADF65CCA15A43392 /* Pods-TSMLibrary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -276,7 +315,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TSMLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -291,6 +330,7 @@
 		};
 		9ABBF9802080EB0600A7CD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D05228B1FE9BD3ECC91F4B /* Pods-TSMLibrary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -300,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TSMLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
